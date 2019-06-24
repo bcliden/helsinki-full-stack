@@ -1,0 +1,15 @@
+user types into form input box
+then submits form with click or enter
+
+browser -> server POST /new_note (with form data as payload)
+
+server adds new note text to notes array (or db)
+send redirect to browser
+
+server -> browser 300 REDIRECT -> '/notes'
+browser -> server GET /notes
+server -> browser index.html
+
+server sends a new copy to the notes array
+when the new request is made. including
+the latest note we added. :)

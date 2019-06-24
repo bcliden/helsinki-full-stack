@@ -1,0 +1,16 @@
+browser -> server GET spa.html
+server -> browser spa.html
+browser -> server GET main.css
+server -> browser main.css
+browser -> server GET spa.js
+server -> browser spa.js
+
+javascript is executed here.
+Script makes an XHR request (once loaded) to '/data.json'
+
+browser -> server /data.json
+server -> browser data.json
+
+notes array is populated with the json
+and the notes are drawn in the page
+

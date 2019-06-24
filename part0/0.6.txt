@@ -1,0 +1,12 @@
+user types a new note and submits it
+
+the form's onsubmit function (written on page load):
+- prevents page reload,
+- makes a new note object using the <input> text and time
+- pushes the new note to the local array & resets the form
+- redraws the notes array
+- sends the new note with an XHR request
+
+browser -> server POST /new_note_spa (with new note payload)
+server -> browser 201 CREATED {message: 'note created'}
+
